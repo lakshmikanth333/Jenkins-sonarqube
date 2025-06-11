@@ -50,16 +50,6 @@ pipeline {
                     }
                 }
             }
-            stage('push') {
-                steps {
-                    script {
-                        sh """
-                        docker push lakshmikanth333/nodedocker:2.0
-                        """
-                    }
-                
-                }
-            }
         }
         post {
             success {
